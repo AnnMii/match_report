@@ -1,0 +1,18 @@
+table:
+  name: team
+  schema: public
+object_relationships:
+  - name: club
+    using:
+      foreign_key_constraint_on: club_id
+  - name: season
+    using:
+      foreign_key_constraint_on: season_id
+array_relationships:
+  - name: player_teams
+    using:
+      foreign_key_constraint_on:
+        column: team_id
+        table:
+          name: player_team
+          schema: public

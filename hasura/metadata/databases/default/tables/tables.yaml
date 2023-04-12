@@ -1,1 +1,5 @@
-[]
+- "!include public_club.yaml"
+- "!include public_player.yaml"
+- "!include public_player_team.yaml"
+- "!include public_season.yaml"
+- "!include public_team.yaml"

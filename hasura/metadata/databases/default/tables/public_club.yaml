@@ -1,0 +1,11 @@
+table:
+  name: club
+  schema: public
+array_relationships:
+  - name: teams
+    using:
+      foreign_key_constraint_on:
+        column: club_id
+        table:
+          name: team
+          schema: public
